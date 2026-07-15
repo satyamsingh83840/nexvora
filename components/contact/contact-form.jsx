@@ -37,7 +37,7 @@ export default function ContactForm() {
     // Construct the payload for Web3Forms
     const formData = {
       // TODO: Replace with your actual Web3Forms Access Key
-      access_key: "629f2234-cbf0-4997-b565-38b0dc0f843e",
+      access_key: "6568ab54-1559-4fe5-8ec6-0e90d68e2afc",
       subject: form.subject || `New Contact Form Submission from ${form.name}`,
       ...form,
     };

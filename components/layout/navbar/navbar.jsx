@@ -9,8 +9,10 @@ import DesktopNav from "./desktop-nav";
 import ThemeToggle from "./theme-toggle";
 import MobileNav from "./mobile-nav";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
+  const router = useRouter();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   useEffect(() => {
@@ -42,7 +44,10 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             <ThemeToggle />
 
-            <Button className="hidden rounded-full px-6 xl:flex">
+            <Button
+              className="hidden rounded-full px-6 xl:flex"
+              onClick={() => router.push("/contact")}
+            >
               Book Consultation
             </Button>
 

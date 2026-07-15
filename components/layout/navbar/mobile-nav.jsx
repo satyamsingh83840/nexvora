@@ -126,13 +126,14 @@ export default function MobileNav({ open, onClose }) {
               </div>
 
               {/* Action Button */}
-              <Button
-                size="lg"
-                className="w-full rounded-xl font-medium tracking-wide shadow-md shadow-primary/10 transition-transform active:scale-[0.98]"
-              >
-                Book Consultation
-              </Button>
-
+              <Link href={"/contact"}>
+                <Button
+                  size="lg"
+                  className="w-full rounded-xl font-medium tracking-wide shadow-md shadow-primary/10 transition-transform active:scale-[0.98]"
+                >
+                  Book Consultation
+                </Button>
+              </Link>
               {/* Contact Info */}
               <div className="space-y-3 pt-2 text-sm text-muted-foreground">
                 <a
